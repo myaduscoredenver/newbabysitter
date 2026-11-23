@@ -164,3 +164,4 @@ function choose(selected){if(answered)return;answered=true;const q=round[index],
 function next(){index++;if(index<round.length){render();return}$('bar').style.width='100%';show('results');const pct=Math.round(100*points/round.length);$('finalScore').textContent=`You scored ${points} out of ${round.length} (${pct}%)`;$('resultMessage').textContent=pct===100?'Kristy would definitely make you club president!':pct>=80?'You really know your way around Stoneybrook!':pct>=50?'Nice work! Time for another visit to Claudia’s room.':'Keep reading—the club has plenty more stories to tell!'}
 $('start').addEventListener('click',start);$('next').addEventListener('click',next);$('again').addEventListener('click',()=>show('setup'));
 </script></body></html>
+
